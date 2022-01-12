@@ -344,6 +344,8 @@ header {
 }
 
 .section4 {
+  background-color: #111;
+  color: #fff;
   .inner {
     padding: 24px;
     max-width: 700px;
@@ -361,7 +363,7 @@ header {
           font-weight: 600;
         }
         &:nth-child(2) {
-          color: #444;
+          
         }
       }
     }
