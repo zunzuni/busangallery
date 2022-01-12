@@ -4,7 +4,7 @@ const mainVisual = document.querySelector('.main-visual')
 const mainVisualHeight = mainVisual.clientHeight
 console.log(mainVisualHeight)
 window.addEventListener('scroll',() => {
-  mainTitle.style.top = `${50 + (window.scrollY / 17)}%`
+  mainTitle.style.top = `${45 + (window.scrollY / 17)}%`
   console.log(window.scrollY)
   if (window.scrollY >= mainVisualHeight) {
     header.classList.add('scrolled')
@@ -26,3 +26,10 @@ hamBtn.addEventListener('click',() => {
 //ham-htn
 
 
+var container = document.getElementById('map');
+var options = {
+  center: new kakao.maps.LatLng(33.450701, 126.570667),
+  level: 3
+};
+
+var map = new kakao.maps.Map(container, options);
