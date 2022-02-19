@@ -159,24 +159,6 @@ header {
       }
     }
   }
-  &.scrolled {
-    .inner {
-      .ham-btn {
-        span {
-          background-color: #333;
-        }
-      }
-    }
-  }
-  &.scrolled {
-    .inner {
-      .ham-btn.clicked {
-        span {
-          background-color: #fff;
-        }
-      }
-    }
-  }
 }
 
 .main-visual { 
@@ -332,6 +314,12 @@ header {
           &:nth-child(2){
             margin-right: 5px;
           }
+          &:last-child {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 600;
+          }
           span {
             font-weight: 600;
             font-size: 17px;
@@ -356,7 +344,7 @@ header {
     .text {
       margin-top: 40px;
       display: flex;
-      >div {
+      >h3 {
         line-height: 1.8;
         &:nth-child(1) {
           margin-right: 20px;

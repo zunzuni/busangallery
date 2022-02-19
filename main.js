@@ -28,8 +28,10 @@ hamBtn.addEventListener('click',() => {
 
 var container = document.getElementById('map');
 var options = {
-  center: new kakao.maps.LatLng(35.12762087089539, 128.97563060299737),
+  center: new kakao.maps.LatLng(35.10932752392788, 128.94275361474251),
   level: 3
 };
 
 var map = new kakao.maps.Map(container, options);
+
+//kakao map api
