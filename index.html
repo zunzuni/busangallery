@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>promotion</title>
+  <title>busangallery</title>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=822227fea7b96e252813abac042349da"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
@@ -98,7 +98,44 @@
       <h3>
         예매 바로가기
       </h3>
-      <input type="date">
+      <div class="book-box">
+        <div>
+          <p>날짜</p>
+          <input type="date" class="date">
+        </div>
+        <div>
+          <p>소인</p>
+          <input type="number" class="child human-input" min="0" value="0">
+        </div>
+        <div>
+          <p>대인</p>
+          <input type="number" class="adult human-input" min="0" value="0">
+        </div>
+      </div>
+      <div class="book-1">
+        <div>
+          <p>날짜 : </p>
+          <div class="date-value"></div>
+        </div>
+        <div>
+          <p>소인 : </p>
+          <div class="child-value">0</div>
+          <p>명</p>
+        </div>
+        <div>
+          <p>대인 : </p>
+          <div class="adult-value">0</div>
+          <p>명</p>
+        </div>
+      </div>
+      <div class="book-2">
+        <div>
+          <p>가격 : </p>
+          <div class="money">0</div>
+          <p>원</p>
+        </div>
+        <a href="javascript:void(0);">예매하기</a>
+      </div>
     </div>
   </section>
 

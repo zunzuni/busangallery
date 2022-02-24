@@ -2,10 +2,8 @@ const mainTitle = document.querySelector('.main-title')
 const header = document.querySelector('header')
 const mainVisual = document.querySelector('.main-visual')
 const mainVisualHeight = mainVisual.clientHeight
-console.log(mainVisualHeight)
 window.addEventListener('scroll',() => {
   mainTitle.style.top = `${45 + (window.scrollY / 17)}%`
-  console.log(window.scrollY)
   if (window.scrollY >= mainVisualHeight) {
     header.classList.add('scrolled')
   } else {
@@ -25,6 +23,33 @@ hamBtn.addEventListener('click',() => {
 })
 //ham-htn
 
+const child = document.querySelector('.child')
+const childValue = document.querySelector('.child-value')
+const adult = document.querySelector('.adult')
+const adultValue = document.querySelector('.adult-value')
+const date = document.querySelector('.date')
+const dateValue = document.querySelector('.date-value')
+const money = document.querySelector('.money')
+
+function book(input, result) {
+  input.addEventListener('change', () => {
+    result.textContent = input.value
+  })
+}
+
+const humanInput = document.querySelectorAll('.human-input')
+humanInput.forEach(element => {
+  element.addEventListener('change',() => {
+    money.textContent = child.value*6000 + adult.value*8000
+  })
+});
+
+book(child,childValue)
+book(adult,adultValue)
+book(date,dateValue)
+
+
+//book 
 
 var container = document.getElementById('map');
 var options = {
