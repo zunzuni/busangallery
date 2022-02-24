@@ -332,6 +332,9 @@ header {
 }
 
 .section3 {
+  background-color: #1a1a1a;
+  color: #fff;
+  
   .inner {
     max-width: 700px;
     padding: 48px 24px;
@@ -356,7 +359,9 @@ header {
         input {
           width: 100%;
           box-sizing: border-box;
-          height: 30px;
+          height: 40px;
+          padding: 0 12px;
+          outline: none;
         }
       }
       
@@ -389,7 +394,7 @@ header {
     .book-2 {
       margin-top: 10px;
       display: flex;
-      line-height: 30px;
+      line-height: 40px;
       justify-content: space-between;
       >div {
         width: calc(100% - 120px);
@@ -402,12 +407,13 @@ header {
         }
       }
       a {
-        width: 120px;
-        height: 30px;
+        width: 150px;
+        height: 40px;
         background: linear-gradient(124deg, #f02fc2, #6094ea);
         text-align: center;
         color: #fff;
         margin-left: 10px;
+        border-radius: 3px;
       }
     }
   }
